@@ -1,0 +1,171 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BlockDiagram-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title ""
+Date "17 sep 2013"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 31500 9750 0    60   Input ~ 0
+TC IN +
+Text HLabel 9950 3650 0    60   Input ~ 0
+TC in +
+Text HLabel 9950 4050 0    60   Input ~ 0
+TC in -
+$Comp
+L LM324 U?
+U 1 1 5237AE38
+P 6950 1850
+F 0 "U?" H 7000 2050 60  0000 C CNN
+F 1 "LM324" H 7100 1650 50  0000 C CNN
+F 2 "" H 6950 1850 60  0000 C CNN
+F 3 "" H 6950 1850 60  0000 C CNN
+	1    6950 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM324 U?
+U 1 1 5237AE65
+P 6900 3650
+F 0 "U?" H 6950 3850 60  0000 C CNN
+F 1 "LM324" H 7050 3450 50  0000 C CNN
+F 2 "" H 6900 3650 60  0000 C CNN
+F 3 "" H 6900 3650 60  0000 C CNN
+	1    6900 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM324 U?
+U 1 1 5237AE6B
+P 4850 2700
+F 0 "U?" H 4900 2900 60  0000 C CNN
+F 1 "LM324" H 5000 2500 50  0000 C CNN
+F 2 "" H 4850 2700 60  0000 C CNN
+F 3 "" H 4850 2700 60  0000 C CNN
+	1    4850 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM324 U?
+U 1 1 5237AE71
+P 7900 4750
+F 0 "U?" H 7950 4950 60  0000 C CNN
+F 1 "LM324" H 8050 4550 50  0000 C CNN
+F 2 "" H 7900 4750 60  0000 C CNN
+F 3 "" H 7900 4750 60  0000 C CNN
+	1    7900 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5237AEB5
+P 4400 5450
+F 0 "#PWR?" H 4400 5400 20  0001 C CNN
+F 1 "+12V" H 4400 5550 30  0000 C CNN
+F 2 "" H 4400 5450 60  0000 C CNN
+F 3 "" H 4400 5450 60  0000 C CNN
+	1    4400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR?
+U 1 1 5237AECE
+P 3300 5550
+F 0 "#PWR?" H 3300 5550 40  0001 C CNN
+F 1 "AGND" H 3300 5480 50  0000 C CNN
+F 2 "" H 3300 5550 60  0000 C CNN
+F 3 "" H 3300 5550 60  0000 C CNN
+	1    3300 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L -12V #PWR?
+U 1 1 5237AEE7
+P 2550 5600
+F 0 "#PWR?" H 2550 5730 20  0001 C CNN
+F 1 "-12V" H 2550 5700 30  0000 C CNN
+F 2 "" H 2550 5600 60  0000 C CNN
+F 3 "" H 2550 5600 60  0000 C CNN
+	1    2550 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D?
+U 1 1 5237AF41
+P 9450 6100
+F 0 "D?" H 9450 6200 50  0000 C CNN
+F 1 "ZENER" H 9450 6000 40  0000 C CNN
+F 2 "~" H 9450 6100 60  0000 C CNN
+F 3 "~" H 9450 6100 60  0000 C CNN
+	1    9450 6100
+	0    -1   -1   0   
+$EndComp
+Text HLabel 900  2800 0    60   Input ~ 0
+MOSI
+Text HLabel 900  3000 0    60   Output ~ 0
+MISO
+Text HLabel 900  3200 0    60   Input ~ 0
+SCLK
+Text HLabel 900  3400 0    60   Input ~ 0
+~CS
+$Comp
+L MCP3553-E/SN U?
+U 1 1 5237B5DF
+P 2050 2700
+F 0 "U?" H 1500 3050 40  0000 C CNN
+F 1 "MCP3553-E/SN" H 1750 3000 40  0000 C CNN
+F 2 "SO8" H 1850 2700 30  0000 C CIN
+F 3 "" H 2050 2700 60  0000 C CNN
+	1    2050 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L MCP3553-E/SN U?
+U 1 1 5237B5EC
+P 2000 4000
+F 0 "U?" H 1450 4350 40  0000 C CNN
+F 1 "MCP3553-E/SN" H 1700 4300 40  0000 C CNN
+F 2 "SO8" H 1800 4000 30  0000 C CIN
+F 3 "" H 2000 4000 60  0000 C CNN
+	1    2000 4000
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
