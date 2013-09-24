@@ -32,11 +32,11 @@ LIBS:valves
 LIBS:BlockDiagram-cache
 EELAYER 27 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
-Date "17 sep 2013"
+Date "18 sep 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -51,25 +51,27 @@ F0 "Arduino" 50
 F1 "Arduino.sch" 50
 $EndSheet
 $Sheet
-S 2500 3600 1250 900 
+S 5500 5050 1300 550 
 U 5233A339
 F0 "Thermocouple" 50
 F1 "Thermocouple.sch" 50
+F2 "TC IN +" I R 6800 5300 60 
+F3 "TC in -" I R 6800 5500 60 
 $EndSheet
 $Sheet
-S 2550 5000 1250 1000
+S 5500 2000 1300 450 
 U 5233A350
 F0 "Power" 50
 F1 "Power.sch" 50
 $EndSheet
 $Sheet
-S 4600 3800 1200 800 
+S 5500 2800 1300 500 
 U 5233A37A
 F0 "LED_Driver" 50
 F1 "LED_Driver.sch" 50
 $EndSheet
 $Sheet
-S 4650 5100 1150 950 
+S 5500 3600 1300 500 
 U 5233A39D
 F0 "Fan" 50
 F1 "Fan.sch" 50
@@ -79,5 +81,11 @@ S 9500 1600 750  4550
 U 5233A3C2
 F0 "Terminal_Block" 50
 F1 "Terminal_Block.sch" 50
+$EndSheet
+$Sheet
+S 5500 4350 1300 450 
+U 523A2160
+F0 "Relay" 50
+F1 "Relay.sch" 50
 $EndSheet
 $EndSCHEMATC
